@@ -1,0 +1,10 @@
+{
+  "resourceName": "reactdynamodb",
+  "tableName": "board",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
