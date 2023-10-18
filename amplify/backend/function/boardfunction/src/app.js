@@ -63,7 +63,7 @@ app.get("/board/:id", async function (req, res) {
     await docClient.update(updateParams).promise();
     res.json({ data });
   } catch (err) {
-    res.status(500).json({ error: err });
+    console.log("에러", err)
   }
 });
 

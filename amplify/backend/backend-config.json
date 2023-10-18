@@ -13,6 +13,20 @@
       ],
       "providerPlugin": "awscloudformation",
       "service": "API Gateway"
+    },
+    "userapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "userapi"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
     }
   },
   "auth": {
@@ -47,6 +61,12 @@
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "userapi": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "parameters": {
@@ -65,9 +85,29 @@
           "resourceName": "boardfunction"
         }
       ]
+    },
+    "AMPLIFY_function_userapi_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "userapi"
+        }
+      ]
+    },
+    "AMPLIFY_function_userapi_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "userapi"
+        }
+      ]
     }
   },
   "storage": {
+    "dynamodb": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
     "reactdynamodb": {
       "providerPlugin": "awscloudformation",
       "service": "DynamoDB"

@@ -1,0 +1,14 @@
+{
+  "resourceName": "dynamodb",
+  "tableName": "newboard",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "createdAt",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
