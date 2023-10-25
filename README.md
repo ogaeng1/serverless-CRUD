@@ -7,7 +7,8 @@
 > * id : 관리자계정
 > * pw : !1234567
 
-
+### 서비스 바로가기 : https://main.dstml78q1qrpx.amplifyapp.com/
+<br />
 
 # AWS를 활용한 서버리스 웹 애플리케이션 만들기
 ![readme1](https://github.com/ogaeng1/serverless-CRUD/assets/59693688/71d60714-6e6f-4930-9108-a7d73e57d66b)
