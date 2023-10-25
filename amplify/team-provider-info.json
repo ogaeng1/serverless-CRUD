@@ -19,7 +19,7 @@
       "function": {
         "boardfunction": {
           "deploymentBucketName": "amplify-amplifyreact-dev-152507-deployment",
-          "s3Key": "amplify-builds/boardfunction-3035755356464f65382f-build.zip"
+          "s3Key": "amplify-builds/boardfunction-71565859723634365159-build.zip"
         },
         "userapi": {
           "deploymentBucketName": "amplify-amplifyreact-dev-152507-deployment",
