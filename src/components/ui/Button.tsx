@@ -1,13 +1,8 @@
-type Props = {
-	text: string
-	className?: string
-	type?: "button" | "submit"
-	onClick?: () => void;
-}
+import { ButtonProps } from "../../@type/type";
 
-const Button = ({ text, className, type, onClick }: Props) => {
+const Button = ({ children, text, className, type, onClick, disabled }: ButtonProps) => {
 	return (
-		<button className={className} type={type} onClick={onClick}>{text}</button>
+		<button className={className} type={type} disabled={disabled} onClick={onClick}>{children || text}</button>
 	)
 }
 
