@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+## 테스트 계정 정보
+### 일반계정
+> * id : 테스트유저
+> * pw : @1234567
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 관리자계정
+> * id : 관리자계정
+> * pw : !1234567
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+# AWS를 활용한 서버리스 웹 애플리케이션 만들기
+![readme1](https://github.com/ogaeng1/serverless-CRUD/assets/59693688/71d60714-6e6f-4930-9108-a7d73e57d66b)
+<br />
+<br />
+<br />
+## 사용한 AWS 기능들
+> * Amplify (배포)
+> * Cognito (회원가입/로그인)
+> * Lambda (함수 실행)
+> * API Gateway (API)
+> * DynamoDB (데이터 저장)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 첫 화면
+![readme2](https://github.com/ogaeng1/serverless-CRUD/assets/59693688/a8be35f3-f2e4-429d-9c06-249e8812ec38)
+<br />
+회원가입 및 로그인 화면이 나타납니다.
+<hr />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 메인화면
+![readme3](https://github.com/ogaeng1/serverless-CRUD/assets/59693688/880ddbd2-5183-495c-8bfb-bbcdd9cb61b7)
+모든 게시글을 볼 수 있습니다.
+<hr />
 
-### `npm test`
+## 글 쓰기
+![readme4](https://github.com/ogaeng1/serverless-CRUD/assets/59693688/0384f65d-1399-4f57-814d-d89c48f89740)
+<br />
+상단의 글쓰기 버튼을 누르면 게시글을 작성할 수 있는 모달창이 나타납니다.
+<hr />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 상세페이지
+![readme5](https://github.com/ogaeng1/serverless-CRUD/assets/59693688/919dc587-1c86-4095-962d-1881b17cdf82)
+게시글의 제목을 누르면 상세페이지로 이동합니다. 자기가 작성한 게시글에 한하여 수정 및 삭제가 가능합니다.
+<hr />
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 관리자 계정 
+![readme6](https://github.com/ogaeng1/serverless-CRUD/assets/59693688/2ebdb930-9c1a-41f2-9919-fc264e9c7627)
+관리자 계정은 가입한 모든 유저의 목록을 확인할 수 있습니다. 또한 모든 게시글에 대한 수정, 삭제 권한이 있습니다. 또한 관리자 계정은
+게시글을 작성하면 일반 게시글이 아닌 공지사항으로 등록됩니다.
